@@ -1,0 +1,412 @@
+/* CSS Reset / Normalize */
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el ejemplo de figma */
+    /* Se esforce para trabalhar com variáveis, é uma dica profissional valiosa */
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/* Sección del Menú */
+
+.tudo {
+    width: 100%;
+}
+
+.menu {
+    padding: 3em 0;
+    background: linear-gradient(#202057, white);
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+.menu__header img {
+    width: 50px;
+    height: auto;
+}
+
+.menu__title {
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+nav {
+    margin: 0 0 2em;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+.menu__list__item {
+    margin-right: 10px;
+}
+
+.menu__list__item__contato {
+    margin-left: 20px;
+}
+
+.menu__list__item__contato a {
+    color: white;
+}
+
+nav li {
+    display: inline-block;
+    margin: auto;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+/* Sección del Title */
+
+.title {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.title__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__profile {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.title__bio {
+    color: #202057;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title__subsection {
+    color: #202057;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.title__network {
+    display: flex;
+    justify-content: center;
+}
+
+.title__network__item {
+    margin: 0 10px;
+}
+
+/* Sección de About */
+
+.about {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.about__title {
+    color: #202057;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about__paragraph {
+    color: #202057;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about__container img {
+    width: 150px;
+    height: auto;
+}
+
+/* Sección de Skills */
+
+.skills {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.skills__title {
+    color: #202057;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills__box {
+    margin: 0 10px;
+}
+
+.skills__name {
+    color: #202057;
+    font-size: 18px;
+}
+
+/* Sección de Hobbies */
+
+.hobbies {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.hobbies__title {
+    color: #202057;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hobbies__box {
+    margin: 0 10px;
+}
+
+.hobbies__name {
+    color: #202057;
+    font-size: 18px;
+}
+
+/* Sección de Formación Académica */
+
+.academic {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.academic__title {
+    color: #202057;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    flex-wrap: wrap;
+}
+
+.academic__courses__list {
+    list-style: none;
+    padding: 0;
+    text-align: unset;
+}
+
+.academic__courses__box {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.academic__courses__item__img img {
+    width: 100px; 
+    height: auto;
+}
+
+.academic__courses__item__title {
+    color: #202057;
+    font-size: 18px;
+}
+
+.academic__courses__item__subtitle {
+    color: #202057;
+    font-size: 16px;
+}
+
+/* Sección de Experiencia Profesional/Proyectos */
+
+.experience {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.experience__section__title {
+    color: #202057;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.experiencie__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.experience__img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.experience__info {
+    text-align: left;
+}
+
+.experience__title {
+    color: #202057;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experience__text {
+    color: #202057;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.experience__description {
+    margin-top: 10px;
+}
+
+.experience__repo,
+.experience__demo {
+    margin-right: 10px;
+}
+
+.experience__repo a,
+.experience__demo a {
+    color: #202057;
+    text-decoration: none;
+}
+
+.experience__repo a:hover,
+.experience__demo a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de Contacto */
+
+.formcontato {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.formcontato__title {
+    color: #202057;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.formcontato__subtext {
+    color: #202057;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.formcontato__contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcontato__img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.formcontato--esquerda {
+    flex: 1;
+}
+
+.formcontato__text {
+    flex: 2;
+    text-align: left;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formcontato__botao {
+    padding: 10px 20px;
+    background-color: #202057;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sección de Footer */
+
+.footer {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.footer__rodape p {
+    color: #202057;
+    font-size: 16px;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (min-width: 768px) {
+    /* Agrega estilos específicos para tablet */
+}
+
+/* Mobile */
+@media (max-width: 425px) {
+    /* Agrega estilos específicos para móvil */
+}
